@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Storing Data
+        let Myobj={name:'Suraj', age:35, city:'Pune'}
+        let MyJSON=JSON.stringify(Myobj)
+        localStorage.setItem("MyJSONData",MyJSON)
+
+        //retriving Data
+        let user=localStorage.getItem('MyJSONData')
+        let newObj=JSON.parse(user)
+        document.write(newObj.name+" "+newObj.age+" "+newObj.city)
+    </script>
+</body>
+</html>

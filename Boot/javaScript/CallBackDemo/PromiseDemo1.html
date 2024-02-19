@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mypromise=new Promise( function(resolve,reject){
+
+                    if(true)
+                    {
+                        resolve()
+                    }       
+                    else
+                    {
+                        reject()
+                    }
+
+        })
+
+
+        mypromise.then(function(success)
+        {
+                document.write('Success')
+        },function(error)
+        {
+                document.write('Somthing Wrong.......')
+        })
+    </script>
+</body>
+</html>

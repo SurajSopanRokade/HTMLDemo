@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Div Style on Button Click</title>
+    <style>
+        /* Optional: Add some initial styles for the div */
+        #myDiv {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(203, 27, 27);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myDiv">This is a div.</div>
+    <button onclick="changeDivStyle()">Change Style</button>
+
+    <script>
+        function changeDivStyle() {
+            var divElement = document.getElementById("myDiv");
+            divElement.style.backgroundColor = "lightblue";
+        }
+    </script>
+
+</body>
+</html>

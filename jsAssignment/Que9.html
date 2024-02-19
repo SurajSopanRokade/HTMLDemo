@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 9.	Data store in localstrorage when user click on add button and display data when user click on show button. -->
+    sid:<input type="text" id="sid"><br><br>
+    sname:<input type="text" id="sname"><br>
+    <button onclick="localstrorage11()">Add</button><br>
+    <button onclick="show()">Show</button>
+    <script>
+        function localstrorage11(){
+            var uid=document.getElementById('sid').value
+            localStorage.setItem("userid", uid)
+            var uname=document.getElementById('sname').value
+            localStorage.setItem("username", uname)
+            alert('Added successfully..')
+        }
+        function show(){
+            var uid=localStorage.getItem("userid")
+            var uname=localStorage.getItem("username")
+            document.write(uid)
+            document.write(uname)
+
+        }
+    </script>
+</body>
+</html>

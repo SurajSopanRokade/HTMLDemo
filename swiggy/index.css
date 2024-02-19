@@ -1,0 +1,50 @@
+.hungry{
+    border: 2px solid;
+    padding-left: 10%;
+    padding-top: 1%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 40%;
+    padding-top: 1%;
+}
+ul{
+    
+    border: 2px solid;
+    list-style-type: none;
+    margin: 0;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 0;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-right: 40%;
+    
+}
+li  :hover{
+    background-color: rgba(240, 162, 85, 0.621);
+}
+li a{
+    display: block;
+    color: rgb(4, 37, 67);
+    text-align: center;
+    padding: 12px 17px;
+}
+li{
+    float: left;
+}
+.div1{
+    border: 2px soild;
+    padding-left: 10%;
+    
+}
+.img{
+    border: 2px solid;
+    margin-left: 10%;
+   
+}
+.bigimg{
+   
+    border: 2px solid;
+    margin-left: 10%;
+    margin-top: 1%;
+    
+}

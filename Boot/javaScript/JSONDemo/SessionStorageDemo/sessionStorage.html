@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1 id="c1"></h1>
+        <button onclick="clickCount()">click me!</button>
+        <script>
+            function clickCount() {
+                if (sessionStorage.clickCount) {
+                    sessionStorage.clickCount = Number(sessionStorage.clickCount) + 1;
+                } else {
+                    sessionStorage.clickCount = 1;
+                }
+                // Update the content of the <h1> element
+                document.getElementById("c1").innerHTML = sessionStorage.clickCount;
+            }
+    
+            // Set the initial content of the <h1> element
+            document.getElementById("c1").innerHTML = sessionStorage.clickCount || 0;
+        </script>
+    </body>
+</body>
+</html>

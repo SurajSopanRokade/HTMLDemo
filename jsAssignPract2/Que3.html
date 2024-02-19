@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   Name<br><input type="text" placeholder="name" id="name"><br><br>
+   <p>Skillset</p>
+   <br><input type="checkbox" value="C" name="skill">C
+   <br><input type="checkbox" value="C++" name="skill">C++
+   <br><input type="checkbox" value="Java" name="skill">Java
+   <br><input type="checkbox" value="Angular" name="skill">Angular
+   <p>Gender</p><br>
+   <input type="radio" value="Male" name="gender">Male
+   <input type="radio" value="female" name="gender">female<br>
+   <button type="button" onclick="showtext()">Add</button>
+   <textarea id="show" rows="12" cols="12"></textarea>
+
+   <script>
+    function showtext(){
+     let name=document.querySelector("#name")
+     var skill=document.querySelectorAll("input[name='skill']:checked")
+     var gender=document.querySelector("input[name='gender']:checked")
+     var text=document.querySelector("#show")
+     var output=name.value+"\n";
+     output+="Skills : "
+     if(skill.length>0){
+        skill.forEach(function(skill){
+            output+=skill.value+","
+        })
+     }
+     if(gender){
+      output += "Gender: " + gender.value + "\n";
+     }
+     text.value=output
+    }
+   </script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var emp=[{eid:1, ename:'Suraj', sal:45000},{eid:2, ename:'Abhishek', sal:67000},{eid:3, ename:'Yogesh', sal:89000}]
+    function Displayemp(emp){
+        for(let i=0; i<emp.length; i++){
+            document.write(emp[i].eid+" "+emp[i].ename+" "+emp[i].sal+"<br>")
+        }
+    }
+    function IncreaseSal(emp){
+        for(let i=0; i<emp.length; i++){
+            emp[i].sal=emp[i].sal+emp[i].sal*0.1
+        }
+        Displayemp(emp)
+    }
+    IncreaseSal(emp)
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var str = " My name   is   suraj "
+        // str=str.trim()
+        // var count=0
+        // let isword=false
+        // function countWords(str){
+        //     for(let i=0; i<str.length; i++){
+        //         if(str.charAt(i)==" "){
+        //             if(isword){
+        //             count++
+        //             isword=false
+        //             }
+        //         }
+        //         else{
+        //             isword=true
+        //         }
+        //     }
+        //     if(isword){
+        //         count++;
+        //     }
+        //     document.write(count)
+        // }
+        // countWords(str)
+
+        var str=" my name   is Suraj"
+        str=str.trim()
+        var count=0;
+        var str1=str.split(' ');
+        document.write(str1);
+        for(let i=0; i<str1.length; i++){
+            if(str1[i]==''){
+               
+            }
+            else{
+                count++
+            }
+        }
+        document.write("<br>"+count)
+    </script>
+</body>
+</html>

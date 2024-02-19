@@ -1,0 +1,46 @@
+<style>
+    .tab {
+      display: none;
+    }
+  
+    .tab.active {
+      display: block;
+    }
+  </style>
+  
+  <label>User Name</label>
+  <input type="text" name="uname" placeholder="suraj@123" class="tab active"><br><br>
+  
+  <label>Full Name</label>
+  <input type="text" name="fname" placeholder="Suraj Rokade" class="tab"><br><br>
+  
+  <label>Password</label>
+  <input type="password" name="pass" class="tab"><br><br>
+  
+  <label>Confirm Password</label>
+  <input type="password" name="Compass" class="tab"><br><br>
+  
+  <label>Email</label>
+  <input type="text" name="email" class="tab"><br><br>
+  
+  <div>
+    <button onclick="changeTab(1)">User Name</button>
+    <button onclick="changeTab(2)">Full Name</button>
+    <button onclick="changeTab(3)">Password</button>
+    <button onclick="changeTab(4)">Confirm Password</button>
+    <button onclick="changeTab(5)">Email</button>
+  </div>
+  
+  <script>
+    function changeTab(tabIndex) {
+      var tabs = document.querySelectorAll('.tab');
+      tabs.forEach(function(tab, index) {
+        if (index + 1 === tabIndex) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    }
+  </script>
+  

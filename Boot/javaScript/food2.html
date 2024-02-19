@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Food on Time</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="food.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            text-align: center;
+        }
+
+        header a.navbar-brand, header .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        header a.navbar-brand:hover, header .navbar-nav .nav-link:hover {
+            color: #ffc107 !important;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-family:'Courier New', Courier, monospace;
+            
+        }
+
+        .offer-img {
+            height: 180px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+           
+        }
+        a{
+            text-decoration: none;
+            font-size: larger;
+        }
+        .offer-title {
+            color: #343a40;
+            margin-bottom: 100px;
+            font-family: cursive;
+            font-size: large;
+        }
+        .ani{
+            background-color: aqua;
+            position: absolute;
+            transition: all;
+            animation: rect 10s linear 1s infinite alternate;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            color: whitesmoke;
+        }
+   
+
+@keyframes rect{
+    0%{left: 0px;
+    background-color: yellow;}
+    25%{
+        background-color: green;}
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: rgb(251, 0, 255);
+    }
+    100%{ left: 1400px;
+    background-color: red;}
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <header style="background-color: #343a40;" class="headers">
+        <h1 class="bg-light" style="background-color: #343a40;">OFFERS OF THE DAY</h1>
+        <a href="\HTMLDemo\swiggy\swiggy.html">Home</a>
+    </header>
+    <div class="ani">
+        Offers
+    </div>
+
+    <div class="container" style="background-color: azure;">
+        <div class="row">
+            <div class="col-sm text-center" style="margin-top: 30px;">
+                <img src="https://th.bing.com/th/id/OIP.kzR-LWRJeanmRwQjZLH1SQHaEE?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="150%">
+                <h3 class="offer-title">70% Off</h3>
+            </div>
+
+            <div class="col-sm text-center"style="margin-top: 30px;">
+                <img src="https://th.bing.com/th/id/OIP.fBe1gguUHhEyZuradl-J6QAAAA?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="140%">
+                <h3 class="offer-title">35 % Off</h3>
+            </div>
+
+            <div class="col-sm text-center"style="margin-top: 30px;">
+                <img src="https://curlytales.com/wp-content/uploads/2019/03/baahubali-thali.jpg" class="offer-img img-fluid mx-auto" width="90%">
+                <h3 class="offer-title">90% Off</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="https://th.bing.com/th/id/OIP.3woua8Dwn2aJWCH00zJ-JAHaE7?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="130%">
+                <h3 class="offer-title">Buy one get one free</h3>
+            </div>
+
+            <div class="col-sm text-center">
+                <img src="https://th.bing.com/th/id/OIP.jJI3bTJ-diLfKDHb9-vwmwHaE8?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="120%">
+                <h3 class="offer-title">Get 10% off</h3>
+            </div>
+
+            <div class="col-sm text-center">
+                <img src="https://wallpapercave.com/wp/wp3724278.jpg" class="offer-img img-fluid mx-auto" width="130%">
+                <h3 class="offer-title">Buy 2 get one free</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Add more images -->
+            <div class="col-sm text-center">
+                <img src="https://curlytales.com/wp-content/uploads/2019/03/baahubali-thali.jpg" class="offer-img img-fluid mx-auto" width="150%">
+                <h3 class="offer-title">Buy One get 2 free</h3>
+            </div>
+
+            <div class="col-sm text-center">
+                <img src="https://th.bing.com/th/id/OIP.3woua8Dwn2aJWCH00zJ-JAHaE7?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="140%">
+                <h3 class="offer-title">Buy one get 3 free</h3>
+            </div>
+
+            <div class="col-sm text-center">
+                <img src="https://th.bing.com/th/id/OIP.LjVBYFCToUWTCy1hrZBs3QHaFC?rs=1&pid=ImgDetMain" class="offer-img img-fluid mx-auto" width="130%">
+                <h3 class="offer-title">Buy one get 4 free</h3>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
+
+

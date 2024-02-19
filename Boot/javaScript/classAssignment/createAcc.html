@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account {
+    constructor(accno, cust_name) {
+        this.accno = accno;
+        this.cust_name = cust_name;
+        this.balance = 10000;
+    }
+
+    withdrawAmount() {
+        var withdraw = parseFloat(prompt('How much amount you want to withdraw'));
+        if (withdraw > this.balance) {
+            document.write("Insufficient Balance.......");
+        } else {
+            this.balance = this.balance - withdraw;
+            document.write("Remaining balance is " + this.balance);
+        }
+    }
+
+    depositeAmount() {
+        var deposit = parseFloat(prompt('How much amount you want to deposit'));
+        this.balance = this.balance + deposit;
+        document.write("Your balance is " + this.balance);
+    }
+}
+
+var acc = new Account(1, 'suraj');
+var num = parseInt(prompt("Choose your operation: 1. Withdraw 2. Deposit"));
+do{
+switch (num) {
+    case 1:
+        acc.withdrawAmount();
+        break;
+    case 2:
+        acc.depositeAmount();
+        break;
+    default:
+        document.write("Invalid choice");
+        break;
+}
+ var n=prompt("Do you want to continue operation press yes")
+}while(n=="yes")      
+       
+    </script>
+</body>
+</html>

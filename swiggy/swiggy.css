@@ -1,0 +1,210 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e9e9;
+}
+
+header {
+   
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    padding: 16px;
+    background-image: url();
+    background-size: contain;
+    background-position: top;
+}
+
+header img {
+    width: 120px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(24, 3, 3);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    transition-property: all;
+}
+
+li a:hover {
+    color: #e66000;
+}
+
+.search-section {
+  
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.search-container {  
+    margin-left: 290px;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e66000;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.restaurant-card h3 {
+    color: #333;
+}
+
+.restaurant-card p {
+    color: #777;
+    margin: 5px 0;
+}
+
+.restaurant-card button {
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-card button:hover {
+    background-color: #e66000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+#select{
+    
+    align-items: left;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 60%;
+    width: 80px;
+}
+
+h1,h2{
+    text-align: center;
+}
+h2{
+   
+    margin-bottom: 1px;
+    
+}
+.list a{
+    color: #ffffff;
+}
+/* #headerdiv{
+    border: 2px solid;
+    padding-left: 40%;
+    padding-right: 25%;
+    position: fixed;
+    background-color: #fff;
+    align-items: center; 
+} */
+#RestBody{
+    padding-top: 80px;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list-unstyled {
+    margin: 0 10px; 
+}
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+#sbutton:hover{
+    font-size: larger;
+    background-color: #e66000;
+}
+
+#sbutton{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transform: rotate(0deg);
+}

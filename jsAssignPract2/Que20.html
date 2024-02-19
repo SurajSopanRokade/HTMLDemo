@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select">
+        <option>India</option>
+        <option>Japan</option>
+        <option>Shrilanka</option>
+        <option>USA</option>
+
+    </select>
+    <button onclick="rem()">Button</button>
+    <script>
+        function rem(){
+        var select=document.getElementById("select")
+        console.log(select.selectedIndex)
+        if(select.selectedIndex!==-1){
+            select.remove(select.selectedIndex)
+        }
+        else{
+            alert("null list")
+        }
+    }
+    </script>
+</body>
+</html>

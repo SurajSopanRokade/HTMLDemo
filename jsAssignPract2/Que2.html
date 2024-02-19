@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2.	Create array of object subject which contain [id, name , subtopic]and subtopic conatain[topicid,topicname] -->
+    <script>
+        const obj=[{id:1, name:"Suraj", subtopic:[{tid:1, tname:"Science"}]},
+        {id:2, name:"Abhishek", subtopic:[{tid:2, tname:"Maths"}]},
+        {id:3, name:"Sunish", subtopic:[{tid:3, tname:"Bio"}]},
+        {id:4, name:"Yogesh", subtopic:[{tid:4, tname:"Phy"}]}
+        ]
+
+        for(let i=0; i<obj.length; i++){
+            document.write(obj[i].id+" "+obj[i].name)
+            document.write(obj[i].subtopic.length)
+            for(let j=0; j<obj[i].subtopic.length; j++){
+                document.write(obj[i].subtopic[j].tid+" "+obj[i].subtopic[j].tname)
+            }
+        }
+    </script>
+</body>
+</html>

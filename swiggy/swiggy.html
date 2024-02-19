@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy-like Restaurant Page</title>
+    <link rel="icon"  href="favicon.ico">
+    <link rel="stylesheet" href="swiggy.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @media only screen and (max-width: 620px) {
+           #headerdiv,.search-section,.restaurant-list,.chart-container,.restaurant-card img,.restaurant-card,.search-container,footer,header {
+              width: 100%;
+           }
+        }
+     </style>   
+</head>
+
+<body>
+    <div id="headerdiv">
+    <header>
+        <img src="swi.jpeg" alt="Swiggy Logo">
+        <select id="select" title="Select">
+            <option value="Other">Other</option>
+            <option value="Food">Food</option>
+            <option value="Restaurant">Restaurant</option>
+        </select>
+        <div>
+            <ul>
+                <li><a href="\HTMLDemo\Boot\javaScript\food2.html" title="Offers">Offers</a></li>
+                <li><a href="\HTMLDemo\CSSPract\practSet1.html">Help</a></li>
+                <li><a href="\HTMLDemo\Boot\javaScript\formUsingBootstrap.html" title="Sign in">Sign in</a></li>
+                <li><a href="Cart">Cart</a></li>
+                <li><a href="#Dashboard" title="Dashboard">Dashboard</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" placeholder="Search for restaurants...">
+            <button type="submit" title="Search" id="sbutton">Search</button>
+        </div>
+    </section>    
+</div>
+
+    <h2 id="restNames">Top Restaurant chains in Pune</h2>
+    <section class="restaurant-list"> 
+        <div class="restaurant-card">
+            <img src="Burg.webp" alt="Burger King img" height="180px">
+            <h3>Burger King</h3>
+            <p>Rating: 4.2</p>
+            <p>Delivery Time: 29 mins</p>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="Pizza Hut.jpeg" alt="Pizza Hut img" height="180px">
+            <h3>Pizza Hut</h3>
+            <p>Rating: 4.0</p>
+            <p>Delivery Time: 31 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="McDonald's.jpg" alt="McDonald's Img" height="180px">
+            <h3>McDonald's</h3>
+            <p>Rating: 4.6</p>
+            <p>Delivery Time: 25 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="KFC.jpg" alt="KFC Img" height="180px">
+            <h3>KFC</h3>
+            <p>Rating: 4.7</p>
+            <p>Delivery Time: 30 mins</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="Theobroma.jpg" alt="Theobroma img" height="180px">
+            <h3>Theobroma</h3>
+            <p>Rating: 4.3</p>
+            <p>Delivery Time: 35 mins</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="StarBucks.jpg" alt="Pizza Hut img" height="180px">
+            <h3>StarBucks Coffee</h3>
+            <p>Rating: 4.2</p>
+            <p>Delivery Time: 25 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="7th heaven.jpeg" alt="McDonald's Img" height="180px">
+            <h3>7th Heaven</h3>
+            <p>Rating: 4.6</p>
+            <p>Delivery Time: 45 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="Subway.jpg" alt="KFC Img" height="180px">
+            <h3>Subway</h3>
+            <p>Rating: 3.9</p>
+            <p>Delivery Time: 35 mins</p>
+            <button>Order Now</button>
+        </div>
+
+
+        <div class="restaurant-card">
+            <img src="Malabar.jpeg" alt="Burger King img" height="180px">
+            <h3>Malabar</h3>
+            <p>Rating: 3.7</p>
+            <p>Delivery Time: 30 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="Wendys.jpg" alt="Pizza Hut img" height="180px">
+            <h3>Wendy's</h3>
+            <p>Rating: 4.0</p>
+            <p>Delivery Time: 31 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="Oho Shawarma.jpg" alt="McDonald's Img" height="180px">
+            <h3>Oho Shawarma</h3>
+            <p>Rating: 4.1</p>
+            <p>Delivery Time: 25 mins</p>
+            <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="Mad momos.jpg" alt="KFC Img" height="180px">
+            <h3>Mad Momos</h3>
+            <p>Rating: 3.7</p>
+            <p>Delivery Time: 30 mins</p>
+            <button>Order Now</button>
+        </div>
+    
+    
+        
+        
+    </section>
+    <h2>What's on your mind?</h2>
+    <section class="restaurant-list">
+        
+        <div class="restaurant-card">
+            <a href="IndianSweets.html" title="Indian Sweets"><img src="Indian Sweets.jpg" alt="Restaurant Image" height="250px"></a>
+            <h3>Indian Sweets</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Samosa.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Samosa</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Pizza.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Pizza</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Burgur.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Burger</h3>
+        </div>
+
+
+        <div class="restaurant-card">
+            <img src="Noodles.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Noodles</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Pasta.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Pasta</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Dosa.jpg" alt="Restaurant Image" height="250px">
+            <h3>Dosa</h3>
+        </div>
+        <div class="restaurant-card">
+            <img src="Cake.jpeg" alt="Restaurant Image" height="250px">
+            <h3>Cake</h3>
+        </div>
+
+    </section>
+
+<h2 style="text-align: center;" id="Dashboard" title="Dashboard">Dashboard</h2>
+<div id="dashboard">
+    <div class="chart-container">
+        <h2>Swiggy Sales (in $)</h2>
+        <canvas id="swiggySalesChart"></canvas>
+    </div>  
+</div>
+<script>
+          
+    const swiggySalesData = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: 'Swiggy Sales',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 2,
+            data: [5000, 7000, 6000, 8000, 9000, 7500],
+        }]
+    };
+
+    const swiggySalesChartContext = document.getElementById('swiggySalesChart').getContext('2d');
+    new Chart(swiggySalesChartContext, {
+        type: 'line',
+        data: swiggySalesData,
+    });
+
+    function orderNow() {
+    
+    window.location.href = "AddCartSwiggy.html";
+    }
+
+</script>
+
+  
+    <footer>
+        <p>&copy; 2024 Swiggy. All rights reserved.</p><br>
+         
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 style="font-family: cursive;">Swiggy</h3>
+                        <p>© 2023 Bundl Technologies Pvt. Ltd</p>
+                        <ul class="list-unstyled">
+                            <li class="list"><a href="#">About</a></li>
+                            <li class="list"><a href="#">Careers</a></li>
+                            <li class="list"><a href="#">Team</a></li>
+                            <li class="list"><a href="#">Swiggy One</a></li>
+                            <li class="list"><a href="#">Swiggy Instamart</a></li>
+                            <li class="list"><a href="#">Swiggy Genie</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Contact us</h3>
+                        <ul class="list-unstyled">
+                            <li class="list"><a href="#">Help & Support</a></li>
+                            <li class="list"><a href="#">Partner with us</a></li>
+                            <li class="list"><a href="#">Ride with us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Legal</h3>
+                        <ul class="list-unstyled">
+                            <li class="list"><a href="#">Terms & Conditions</a></li>
+                            <li class="list"><a href="#">Cookie Policy</a></li>
+                            <li class="list"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+               
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h3>We deliver to:</h3>
+                        <ul class="list-unstyled">
+                            <li>Bangalore</li>
+                            <li>Gurgaon</li>
+                            <li>Hyderabad</li>
+                            <li>Delhi</li>
+                            <li>Mumbai</li>
+                            <li>Pune</li>                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+

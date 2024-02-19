@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cars=[{modelno:1, carname:'Nano', price:100000}, {modelno:2, carname:'Toyota', price:200000}, {modelno:3, carname:'Enova', price:300000}]
+        for(var car of cars){
+            document.write(car.modelno+" "+car.carname+" "+car.price)
+            document.write("<br>")
+        }
+        document.write("__________________________________________________________")
+        document.write("<br>")
+        function findcars(ca){
+            for(let i=0; i<ca.length; i++){
+                if(ca[i].price>100000){
+                    document.write(ca[i].modelno+" "+ca[i].carname+" "+ca[i].price)
+                    document.write("<br>")
+                }
+            }
+        }
+        findcars(cars)
+        consol.log(cars)
+oo
+        
+    </script>
+</body>
+</html>

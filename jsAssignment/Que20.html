@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 20.	Write a JavaScript program to remove items from a dropdown list. -->
+    <Select id="dropdown">
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+    </Select>
+
+    <button onclick="deleteDropdown()">Click</button>
+
+    <script>
+        function deleteDropdown(){
+            var select= document.getElementById("dropdown")
+            if(select.selectedIndex!==-1){
+                select.remove(select.selectedIndex);
+            }
+            else{
+                alert("Please enter not null value")
+            }
+        }
+    </script>
+</body>
+</html>

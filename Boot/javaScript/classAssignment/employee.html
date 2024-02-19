@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            id
+            name
+            salary
+            constructor(id,name,salary){
+                this.id=id
+                this.name=name
+                this.salary=salary
+                this.show()
+            }
+            show(){
+                document.write("<br>"+this.id+" "+this.name+" "+this.salary)
+            }
+        }
+        let emp= new Employee(1, 'Suraj', 45000)
+        let emp1= new Employee(2, 'Yogesh', 78000)
+        let emp2= new Employee(3, 'Abhishek', 90000)
+        
+    </script>
+</body>
+</html>

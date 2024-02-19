@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let user={
+        accno:1234, balance:10000,
+        get info(){
+            return this.accno+" "+this.balance
+        },
+        set info(value){
+            var arr=value.split(' ')
+            if(arr[1]<5000){
+               document.write("insufficient balance....") 
+            }
+            else{
+                [this.accno, this.balance]=value.split(" ")
+            }
+        }
+    }
+    user.info="2345 100000"
+    alert(user.info)
+</script>
+</body>
+</html>

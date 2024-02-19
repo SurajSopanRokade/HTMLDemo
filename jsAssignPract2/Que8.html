@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 8.	Write a javascript code to accept data in 2 textboxes and on click event validate following
+•	Check whether text boxes are empty
+•	If not check for numeric values
+•	If numeric using alert display addition
+•	If not numeric alert user and set focus on respective textbox -->
+        Name1:<input type="text" placeholder="name1" id="n1" value="name1">
+        Name2:<input type="text" placeholder="name2" id="n2" value="name2">
+        <button type="button" onclick="check()">Check</button>
+        <script>
+            function check(){
+            var name1=document.getElementById("n1")
+            var name2=document.getElementById("n2")
+
+            if(name1.value=="" && name2.value==""){
+                alert("text boxes are empty")
+            }
+            else if(isNumber(name1.value) && isNumber(name2.value)){
+                let res=parseFloat(name1.value)+parseFloat(name2.value)
+                alert(`Please add text not number addition is ${res}`)
+            }
+            else if(isNumber(name1.value)){
+                alert("Please add text not number 😭😭")
+                name1.focus()
+            }
+            else if(isNumber(name2.value)){
+                name2.focus()
+            }
+            function isNumber(num){
+                return isFinite(num) && !isNaN(parseFloat(num))
+            }
+        }
+        </script>
+
+</body>
+</html>

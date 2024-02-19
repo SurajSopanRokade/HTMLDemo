@@ -1,0 +1,16 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: aqua;
+}
+li a{
+    display: block;
+    color: rgb(237, 9, 9);
+    text-decoration: none;
+}
+li :hover{
+    background-color: blanchedalmond;
+    color: rgb(red, rgb(36, 154, 36), rgb(51, 51, 210));
+}

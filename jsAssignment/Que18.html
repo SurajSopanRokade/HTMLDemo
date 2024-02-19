@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 18.	Write a JavaScript program to remove duplicate items from an array -->
+    <script>
+        var arr=[1,22,3,3,44,5,6,5,5,6]
+        for(let i=0; i<arr.length; i++){
+            for(let j=i+1; j<arr.length; j++){
+                if(arr[i]==arr[j]){
+                    arr[j]='$';
+                }
+            }
+        }
+        for(let i=0; i<arr.length; i++){
+            if(arr[i]!='$'){
+                document.write(arr[i]+",")
+            }
+        }
+    </script>
+</body>
+</html>

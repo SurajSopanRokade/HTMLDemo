@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating a person object using JSON
+        const personJSON = '{"name": "John Doe", "age": 30, "city": "New York"}';
+
+        // Parsing the JSON string to create a JavaScript object
+        const personObject = JSON.parse(personJSON);
+
+        // Logging the person object
+        console.log(personObject);
+
+        // Creating an array of persons using JSON
+        const personsArrayJSON = '[{"name": "Alice", "age": 25, "city": "London"}, {"name": "Bob", "age": 35, "city": "Paris"}]';
+
+        // Parsing the JSON string to create a JavaScript array of objects
+        const personsArray = JSON.parse(personsArrayJSON);
+
+        // Logging the persons array
+        console.log(personsArray);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var emp = [{ eid: 1, ename: 'Abhishek', sal: 78900 },
+        { eid: 2, ename: 'Sudershan', sal: 67000 },
+        { eid: 3, ename: 'Yogesh', sal: 89000 }]
+        function Displayemp(emp) {
+            for (let i = 0; i < emp.length; i++) {
+                document.write(emp[i].eid + " " + emp[i].ename + " " + emp[i].sal)
+                document.write("<br>")
+            }
+        }
+        // Displayemp(emp)
+       
+        function calculatePF(emp){
+            for(let i=0; i<emp.length; i++){
+                emp[i].sal=emp[i].sal*0.12
+            }
+            Displayemp(emp)
+        }
+        calculatePF(emp)
+      
+
+    </script>
+</body>
+
+</html>

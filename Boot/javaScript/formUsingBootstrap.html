@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #pass{
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        #user{
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        #form{
+            margin-left: 200px;
+            margin-right: 200px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            margin-right: 50px;
+        }
+        #atag{
+            margin-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: white;" >
+   
+    <div class="container mt-5">
+    <form class="was-validated" action="\HTMLDemo\swiggy\swiggy.html" style="background-color: antiquewhite; text-align: center; border: 2px solid;" id="form">
+        <h2 style="color: rgb(4, 26, 26); font-family: cursive; background-color: azure;">Sign In</h2>
+        <div class="mb-3 mt-3" id="user">
+            <label class="form-label">UserName:</label>
+            <input type="text" class="form-control" placeholder="Enter UserName" name="uname" required>
+            <div class="invalid feedback">Pls Enter UserName</div>
+        </div>
+        <div class="mb-3" id="pass">
+            <label class="form-label">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter Password" name="pwd" required>
+            <div class="invalid feedback">Pls Enter Password</div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">submit</button>
+            
+        </div>
+        <br><br>
+        <div id="atag">
+            <a href="#forget password">forget Password</a>
+            <a href="#Sign up">Sign Up</a>
+        </div>
+        
+    </form>
+    </div>
+</body>
+</html>

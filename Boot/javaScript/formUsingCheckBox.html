@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      #heading{
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+   <div class="bg-info">
+    <div class="container mt-5">
+      <form class="was-validated" action="formUsingBootstrap.html">
+        <div style="background-color: rgb(191, 100, 237);" id="heading">
+            <h2 style="color: crimson;">Sign Up Form</h2>
+        </div>
+        <div class="mb-3">
+          <label for="username" class="form-label" style="background-color: cornflowerblue;">User Name:</label>
+          <input type="text" class="form-control" id="UserName" placeholder="Enter UserName" required>
+          <div class="invalid feedback">Pls Enter UserName</div>
+        </div>
+        <div class="mb-3">
+            <label for="=Password" class="form-label" style="background-color: cornflowerblue;">Password:</label>
+            <input type="password" class="form-control" id="pass" placeholder="Enter password" required>
+            <div class="invalid feedback">Pls Enter Password</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="background-color: cornflowerblue;">Select Branch</label>
+            <div class="dropdown">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static">Select Branch</button>
+                <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item" href="#">Mechanical Engineering</a></li>
+                    <li> <a class="dropdown-item" href="#">Computer Engineering</a></li>
+                    <li> <a class="dropdown-item" href="#">IT Engineering</a></li>
+                    <li> <a class="dropdown-item" href="#">Civil Engineering</a></li>
+                    <li> <a class="dropdown-item" href="#">Automobile Engineering</a></li>
+                    <li> <a class="dropdown-item" href="#">Electronics Engineering</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+          <div class="mb-3">
+            <label for="checkbox" class="form-label" style="background-color: cornflowerblue;">Select Technology</label><br>
+            <input type="checkbox" class="form-check-input" id="tech">java<br>
+            <input type="checkbox" class="form-check-input" id="tech">Angular<br>
+            <input type="checkbox" class="form-check-input" id="tech">bootstrap<br>
+            <input type="checkbox" class="form-check-input" id="tech">sql<br> 
+          </div>
+          <div>
+          <div><label style="background-color: cornflowerblue;">Select Gender</label></div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadio1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadio1">
+              male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadio2" value="option2">
+            <label class="form-check-label" for="exampleRadio2">
+              female
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br><br>
+        <textarea name="feedback" id="fd" placeholder="Please give your feedback" rows="5">Feedback</textarea>
+      </form>
+    </div>
+    </div>
+  </div> 
+</body>
+</html>

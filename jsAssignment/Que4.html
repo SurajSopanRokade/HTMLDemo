@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 4.	Write a javascript code to accept data in below form and on click event display data in textarea -->
+    <form id="myForm">
+        Name: <input type="text" name="name" id="name"><br>
+    
+        <h3>SkillSets</h3>
+        <input type="checkbox" name="skill" value="C"> C<br>
+        <input type="checkbox" name="skill" value="C++"> C++<br>
+        <input type="checkbox" name="skill" value="Java"> Java<br>
+        <input type="checkbox" name="skill" value="Angular"> Angular<br>
+    
+        <br>
+    
+        <h3>Gender</h3>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+
+        <h3>Text</h3>
+        <textarea id="outputText"></textarea>
+
+        <br>
+
+        <button type="button" onclick="displayData()">Display Data</button>
+    </form>
+
+    <script>
+        function displayData() {
+            
+            var name = document.getElementById("name").value;
+            var skills = document.querySelectorAll('input[name="skill"]:checked');
+            var gender = document.querySelector('input[name="gender"]:checked');
+
+            
+            var output = "Name: " + name + "\n";
+
+            if (skills.length > 0) {
+                output += "Skills: ";
+                skills.forEach(function(skill) {
+                    output += skill.value + ", ";
+                });
+                output = output.slice(0, -2); 
+                output += "\n";
+            }
+
+            if (gender) {
+                output += "Gender: " + gender.value + "\n";
+            }
+
+            
+            document.getElementById("outputText").value = output;
+        }
+    </script>
+    
+</body>
+</html>

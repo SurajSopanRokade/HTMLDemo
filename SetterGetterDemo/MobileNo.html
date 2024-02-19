@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={uname:'Suraj', mob:9845678549,
+        get info(){
+                return this.uname+" "+this.mob
+            }
+        ,
+        set info(value){
+            var arr=value.split(" ")
+            if(arr[1].length!=10){
+                document.write("invalid no .....")
+            }
+            else{
+                [this.uname, this.mob]=value.split(" ")
+            }
+        }
+        }
+        user.info='Sudarshan 5678907856'
+        alert(user.info)
+    </script>
+</body>
+</html>
